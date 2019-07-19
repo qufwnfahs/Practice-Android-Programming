@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView_item_no" android:layout_weight="1"
+            android:hint="번호" android:gravity="center"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView_item_name" android:layout_weight="1"
+            android:hint="이름" android:gravity="center"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView_item_birth" android:layout_weight="1"
+            android:hint="생년월일" android:gravity="center"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView_item_sex" android:layout_weight="1"
+            android:hint="성별" android:gravity="center"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView_item_job" android:layout_weight="1"
+            android:hint="직업" android:gravity="center"/>
+    <Button
+            android:text="@string/button_item_remove_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button_item_remove" android:layout_weight="1"/>
+</LinearLayout>

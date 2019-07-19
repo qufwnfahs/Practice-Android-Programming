@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">고객 관리 시스템</string>
     <string name="button_add_customer_name">고객 추가하기</string>
+    <string name="button_item_remove_name">삭제</string>
 </resources>
