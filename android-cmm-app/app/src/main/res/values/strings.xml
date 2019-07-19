@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">고객 관리 시스템</string>
+    <string name="button_add_customer_name">고객 추가하기</string>
 </resources>
