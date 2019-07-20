@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <GridLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:columnCount="2" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView_table_customer"
+            app:layout_constraintTop_toBottomOf="@id/button_add_customer"
+            app:layout_constraintVertical_bias="0.0" android:id="@+id/girdLayout"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            android:rowCount="4">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_add_name"
+                android:gravity="center" tools:layout_weight="1" android:layout_columnWeight="1" android:text="이름"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText_add_name" android:layout_columnWeight="2" android:hint="이름을 입력하세요"/>
+        <TextView
+                android:text="생년월일"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_add_birth"
+                android:layout_columnWeight="1" android:gravity="center"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText_add_birth" android:layout_columnWeight="2" android:hint="생년월일을 입력하세요"/>
+        <TextView
+                android:text="성별"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_add_sex"
+                android:layout_columnWeight="1" android:gravity="center"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText_add_sex" android:layout_columnWeight="2" android:hint="성별을 입력하세요 (남자, 여자)"/>
+        <TextView
+                android:text="직업"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_add_job"
+                android:layout_columnWeight="1" android:gravity="center"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText_add_job" android:layout_columnWeight="2" android:hint="직업을 입력하세요"/>
+    </GridLayout>
+    <Button
+            android:text="추가하기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button_add_customer_call"/>
+</LinearLayout>

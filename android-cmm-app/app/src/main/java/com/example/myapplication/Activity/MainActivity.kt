@@ -1,5 +1,6 @@
 package com.example.myapplication.Activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -8,13 +9,13 @@ import com.example.myapplication.Adapter.ShincoRVAdapter
 import com.example.myapplication.Listener.ShincoTextWatcher
 import com.example.myapplication.Listener.ShincoValueEventListener
 import com.example.myapplication.R
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-
-    val databaseReference : DatabaseReference = FirebaseDatabase.getInstance().reference.child("customer")
+    companion object {
+        val databaseReference = FirebaseDatabase.getInstance().reference.child("customer")
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,8 +37,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v : View?) {
         when(v) {
-            button_add_customer -> return // var intent = Intent(this, CustomerAddActivity::class.java)
-                                          // startActivity(intent)
+            button_add_customer -> startActivity(Intent(this, CustomerAddActivity::class.java))
         }
     }
 }

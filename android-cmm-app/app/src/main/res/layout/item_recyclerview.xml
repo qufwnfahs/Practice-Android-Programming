@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="horizontal"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:columnCount="6" android:paddingTop="5dip"
+            android:paddingBottom="5dip">
     <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView_item_no" android:layout_weight="1"
-            android:hint="번호" android:gravity="center"/>
+            android:layout_height="wrap_content" android:id="@+id/textView_add_name"
+            android:hint="번호" android:gravity="center" tools:layout_weight="1" android:layout_columnWeight="1"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView_item_name" android:layout_weight="1"
-            android:hint="이름" android:gravity="center"/>
+            android:hint="이름" android:gravity="center" android:layout_columnWeight="3"/>
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="106dp"
             android:layout_height="wrap_content" android:id="@+id/textView_item_birth" android:layout_weight="1"
-            android:hint="생년월일" android:gravity="center"/>
+            android:hint="생년월일" android:gravity="center" android:layout_columnWeight="4"/>
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="44dp"
             android:layout_height="wrap_content" android:id="@+id/textView_item_sex" android:layout_weight="1"
-            android:hint="성별" android:gravity="center"/>
+            android:hint="성별" android:gravity="center" android:layout_columnWeight="2"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView_item_job" android:layout_weight="1"
-            android:hint="직업" android:gravity="center"/>
+            android:hint="직업" android:gravity="center" android:layout_columnWeight="3"/>
     <Button
             android:text="@string/button_item_remove_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button_item_remove" android:layout_weight="1"/>
-</LinearLayout>
+            android:layout_width="50dip"
+            android:layout_height="30dip" android:id="@+id/button_item_remove" android:layout_weight="1"
+            android:textColor="#FFFFFF" android:background="#F44336"/>
+</GridLayout>
