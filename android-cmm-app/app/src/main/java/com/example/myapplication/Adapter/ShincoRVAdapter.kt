@@ -29,9 +29,6 @@ class ShincoRVAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.
             holder.textView_item_birth.text = dataList.get(position).birth
             holder.textView_item_sex.text = dataList.get(position).sex
             holder.textView_item_job.text = dataList.get(position).job
-            holder.button_item_remove.setOnClickListener(View.OnClickListener {view ->  
-                removeItem(position)
-            })
         }
     }
 
@@ -41,15 +38,16 @@ class ShincoRVAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.
 
     // 미완성
     fun removeItem(position: Int) {
-        //dataList.removeAt(position)
-        //dataList_clone.removeAt(position)
+        dataList.removeAt(position)
+        dataList_clone.removeAt(position)
 
-        //notifyItemChanged(position)
+        notifyItemRemoved(position)
     }
 
     fun updateItem(dataList: ArrayList<Customer>) {
         this.dataList.clear()
         this.dataList.addAll(dataList)
+        this.dataList_clone.addAll(dataList)
 
         notifyDataSetChanged()
     }
@@ -62,12 +60,22 @@ class ShincoRVAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.
         //notifyDataSetChanged()
     }
 
-    inner class ShincoViewHolder(v : View) : RecyclerView.ViewHolder(v) {
+    inner class ShincoViewHolder(v: View) : RecyclerView.ViewHolder(v), View.OnClickListener {
         val textView_item_no = v?.findViewById<TextView>(R.id.textView_item_no)
         val textView_item_name = v?.findViewById<TextView>(R.id.textView_item_name)
         val textView_item_birth = v?.findViewById<TextView>(R.id.textView_item_birth)
         val textView_item_sex = v?.findViewById<TextView>(R.id.textView_item_sex)
         val textView_item_job = v?.findViewById<TextView>(R.id.textView_item_job)
         val button_item_remove = v?.findViewById<Button>(R.id.button_item_remove)
+
+        init{
+            button_item_remove.setOnClickListener(this)
+        }
+
+        override fun onClick(v: View?) {
+            when(v) {
+                button_item_remove -> removeItem(this.adapterPosition);
+            }
+        }
     }
 }
