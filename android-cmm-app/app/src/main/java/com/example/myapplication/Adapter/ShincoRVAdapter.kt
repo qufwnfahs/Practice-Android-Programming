@@ -13,7 +13,7 @@ import com.example.myapplication.R
 
 class ShincoRVAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     companion object {
-        val dataList = arrayListOf<Customer>()
+        val dataList : ArrayList<Customer> = arrayListOf<Customer>()
         val dataList_clone = arrayListOf<Customer>()
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
