@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     companion object {
-        val databaseReference = FirebaseDatabase.getInstance().reference.child("customer")
+        val databaseReference = FirebaseDatabase.getInstance().reference.child("videos")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
