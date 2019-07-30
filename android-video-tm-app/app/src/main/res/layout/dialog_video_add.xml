@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="영상 제목"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_title"
+                android:gravity="center"
+                android:layout_margin="10dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText_title" android:hint="영상 제목"
+                android:singleLine="true"
+                app:layout_column="5" app:layout_row="0" android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="작성 이름"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_author"
+                android:gravity="center"
+                android:layout_margin="10dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText_author" android:hint="본인 닉네임"
+                android:singleLine="true"
+                app:layout_column="5" app:layout_row="0" android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="링크 주소"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_link"
+                android:gravity="center"
+                android:layout_margin="10dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText_link" android:hint="https://youtu.be/3RcUEaEim_o"
+                android:singleLine="true"
+                app:layout_column="5" app:layout_row="0" android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="시작 시간"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_start"
+                android:gravity="center"
+                android:layout_margin="10dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/editText_start" android:hint="0:00" android:singleLine="true"
+                app:layout_column="5" app:layout_row="0" android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" android:layout_marginRight="10dp" android:text="0:00"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="종료 시간"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_end"
+                android:gravity="center"
+                android:layout_margin="10dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/editText_end" android:hint="0:00" android:singleLine="true"
+                app:layout_column="5" app:layout_row="0" android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" android:layout_marginRight="10dp" android:text="0:00"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+                android:text="등 록"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button_add" android:layout_weight="1"
+                android:layout_margin="5dp"/>
+        <Button
+                android:text="취 소"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button_cancel" android:layout_weight="1"
+                android:layout_margin="5dp"/>
+    </LinearLayout>
+</LinearLayout>
