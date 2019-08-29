@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".Fragment.Fragment_Experiment_Preparation" android:background="@color/colorMain">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:clickable="true"
+            android:background="@drawable/button_unselected_state">
+        <TextView
+                android:text="Time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textView_e_p_title"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:textColor="#000000" android:gravity="center"
+                android:layout_marginTop="20dp" android:textSize="24sp"/>
+        <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/progressBar"
+                app:layout_constraintTop_toBottomOf="@+id/textView_e_p_title"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginTop="20dp" android:progressDrawable="@drawable/progress_drawable"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline" android:layout_marginTop="20dp"
+                android:id="@+id/constraintLayout2">
+            <com.google.android.exoplayer2.ui.PlayerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:fastforward_increment="10000"
+                    app:rewind_increment="10000"
+                    android:id="@+id/playerView_timer">
+            </com.google.android.exoplayer2.ui.PlayerView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline" app:layout_constraintGuide_percent="0.8"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_timer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guideline"
+                android:textSize="24sp" android:gravity="center" android:textColor="#000000"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

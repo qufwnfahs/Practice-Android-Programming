@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/constraintLayout">
+
+        <TextView
+                android:text="Alginate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_item" android:layout_weight="1"
+                android:textColor="@color/tab_text_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:gravity="center"
+                android:textSize="24sp"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button_play" android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:gravity="center"
+                android:background="@drawable/selector_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@drawable/iconmostr_arrow" android:paddingLeft="8dp" android:paddingTop="5dp"
+                android:paddingBottom="5dp" android:paddingRight="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

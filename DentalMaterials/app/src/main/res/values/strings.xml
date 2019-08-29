@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">Dental Materials</string>
+    <string name="tab_home_title">Dental Materials\nInformation</string>
+
+    // Tab Menu
+    <string-array name="main_tabName">
+        <item>Home</item>
+        <item>Practice\nContents</item>
+        <item>Autonomous\nPractice</item>
+    </string-array>
+
+    // fragment home buttons
+    <string-array name="home_buttons">
+        <item>Alginate</item>
+        <item>Glass ionomer</item>
+        <item>Composite resin</item>
+        <item>Dental wax</item>
+        <item>Dental cement</item>
+        <item>Dental ceramic</item>
+    </string-array>
+
+    // Info Strings
+    <string-array name="Alginate">
+        <item>Alginate(알지네이트)</item>
+        <item>알지네이트의 특성</item>
+        <item>작업시간:</item>
+        <item>경화시간:</item>
+        <item>실습준비물:</item>
+    </string-array>
+
+    <string-array name="Glassionomer">
+        <item>Glass ionomer</item>
+        <item>Glass ionomer의 특성</item>
+        <item>작업시간:</item>
+        <item>경화시간:</item>
+        <item>실습준비물:</item>
+    </string-array>
+
+    <string-array name="Compositeresin">
+        <item>Composite resin</item>
+        <item>Compositeresin의 특성</item>
+        <item>작업시간:</item>
+        <item>경화시간:</item>
+        <item>실습준비물:</item>
+    </string-array>
+
+    <string-array name="Dentalwax">
+        <item>Dental wax</item>
+        <item>Dental wax의 특성</item>
+        <item>작업시간:</item>
+        <item>경화시간:</item>
+        <item>실습준비물:</item>
+    </string-array>
+
+    <string-array name="Dentalcement">
+        <item>Dental cement</item>
+        <item>Dental cement의 특성</item>
+        <item>작업시간:</item>
+        <item>경화시간:</item>
+        <item>실습준비물:</item>
+    </string-array>
+
+    <string-array name="Dentalceramic">
+        <item>Dental ceramic</item>
+        <item>Dental ceramic의 특성</item>
+        <item>작업시간:</item>
+        <item>경화시간:</item>
+        <item>실습준비물:</item>
+    </string-array>
+
+    // Needs Strings
+    <string-array name="NeedsAlginate">
+        <item>준비물 1</item>
+        <item>준비물 2</item>
+        <item>준비물 3</item>
+        <item>준비물 4</item>
+        <item>준비물 5</item>
+    </string-array>
+
+    <string-array name="NeedsGlassionomer">
+        <item>준비물 1</item>
+        <item>준비물 2</item>
+        <item>준비물 3</item>
+    </string-array>
+    <string-array name="NeedsCompositeresin">
+        <item>준비물 1</item>
+        <item>준비물 2</item>
+    </string-array>
+    <string-array name="NeedsDentalwax">
+        <item>준비물 1</item>
+        <item>준비물 2</item>
+        <item>준비물 3</item>
+        <item>준비물 4</item>
+        <item>준비물 5</item>
+        <item>준비물 6</item>
+        <item>준비물 7</item>
+        <item>준비물 8</item>
+        <item>준비물 9</item>
+    </string-array>
+    <string-array name="NeedsDentalcement">
+        <item>준비물 1</item>
+    </string-array>
+    <string-array name="NeedsDentalceramic">
+        <item>준비물 1</item>
+        <item>준비물 2</item>
+        <item>준비물 3</item>
+        <item>준비물 4</item>
+    </string-array>
+
+    // WorkingTime Strings
+    <string-array name="WorkingTimeAlginate">
+        <item>1.25min</item>
+    </string-array>
+    <string-array name="WorkingTimeGlassionomer">
+        <item>5min</item>
+    </string-array>
+    <string-array name="WorkingTimeCompositeresin">
+        <item>0.5min</item>
+    </string-array>
+    <string-array name="WorkingTimeDentalwax">
+        <item>3min</item>
+    </string-array>
+    <string-array name="WorkingTimeDentalcement">
+        <item>3.25min</item>
+    </string-array>
+    <string-array name="WorkingTimeDentalceramic">
+        <item>6.25min</item>
+    </string-array>
+
+    // SettingTime Strings
+    <string-array name="SettingTimeAlginate">
+        <item>30sec</item>
+    </string-array>
+    <string-array name="SettingTimeGlassionomer">
+        <item>50sec</item>
+    </string-array>
+    <string-array name="SettingTimeCompositeresin">
+        <item>2min</item>
+    </string-array>
+    <string-array name="SettingTimeDentalwax">
+        <item>15sec</item>
+    </string-array>
+    <string-array name="SettingTimeDentalcement">
+        <item>45sec</item>
+    </string-array>
+    <string-array name="SettingTimeDentalceramic">
+        <item>55sec</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

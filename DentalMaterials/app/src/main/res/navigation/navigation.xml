@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/fragment_Experiment_Preparation">
+
+    <fragment android:id="@+id/fragment_Experiment_Preparation"
+              android:name="com.example.dentalmaterials.Fragment.Fragment_Experiment_Preparation"
+              android:label="fragment_fragment__experiment__preparation"
+              tools:layout="@layout/fragment__experiment__preparation">
+        <action android:id="@+id/action_fragment_Experiment_Preparation_to_fragment_Timer"
+                app:destination="@id/fragment_Timer"/>
+        <argument android:name="type" app:argType="string" android:defaultValue="Unknown"/>
+        <argument android:name="subject" app:argType="string" android:defaultValue="Unknown"/>
+    </fragment>
+    <fragment android:id="@+id/fragment_Timer" android:name="com.example.dentalmaterials.Fragment.Fragment_Timer"
+              android:label="Fragment_Timer"/>
+</navigation>

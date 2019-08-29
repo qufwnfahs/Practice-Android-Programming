@@ -55,7 +55,7 @@ class EventDialogFragment : DialogFragment(), View.OnClickListener {
         var start = editText_start.text.toString()
         var end = editText_end.text.toString()
         var author = editText_author.text.toString()
-
+c
         var index = media_url.lastIndexOf("/")
         var id = media_url.substring(index+1, media_url.length)
 

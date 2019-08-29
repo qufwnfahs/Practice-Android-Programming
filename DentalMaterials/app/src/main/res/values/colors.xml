@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorMain">#EFE5F7</color>
+    <color name="accent_word">#552579</color>
+    <color name="tab_text_color">#5D5D5D</color>
+    <color name="tab_select">#CAABE2</color>
+    <color name="tab_unselect">#E1D0ED</color>
+    <color name="button_unselect">#F8F3FB</color>
+    <color name="button_close_background">#757070</color>
+
+    <color name="gray">#A6A6A6</color>
+    <color name="cyan">#AEFFFF</color>
+    <color name="tranquil">#ED699F</color>
+</resources>
