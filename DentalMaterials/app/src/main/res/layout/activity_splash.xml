@@ -23,5 +23,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="180dp"
             android:textAlignment="center"
-            android:textSize="60dp" android:textColor="#A6A6A6"/>
+            android:textColor="#A6A6A6"
+            android:textSize="60sp" />
 </RelativeLayout>

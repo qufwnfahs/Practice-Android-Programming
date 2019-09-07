@@ -26,8 +26,8 @@ class Controller {
         fun getStringForENGAndKOR(context : Context, str : String) : SpannableStringBuilder {
             var ssb = SpannableStringBuilder(str)
 
-            var font_eng = ResourcesCompat.getFont(context, R.font.acaslon_regular)
-            var font_kor =ResourcesCompat.getFont(context, R.font.dxpoetry)
+            var font_eng = ResourcesCompat.getFont(context, R.font.iropkebatang)
+            var font_kor = ResourcesCompat.getFont(context, R.font.iropkebatang)
 
             for (i in 0..str.length-1) {
                 // ENG

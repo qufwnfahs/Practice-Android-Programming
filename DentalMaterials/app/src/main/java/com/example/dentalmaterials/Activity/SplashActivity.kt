@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Message
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.dentalmaterials.Controller.Controller
 import com.example.dentalmaterials.R
 import kotlinx.android.synthetic.main.activity_splash.*
@@ -29,7 +30,7 @@ class SplashActivity : AppCompatActivity() {
         start_to_end_point.put(0, 1)
         start_to_end_point.put(7, 8)
 
-        textView_splash_title.text = Controller.getStringForColorString(start_to_end_point, resources.getString(R.string.app_name), resources.getColor(R.color.accent_word) )
+        textView_splash_title.text = Controller.getStringForColorString(start_to_end_point, resources.getString(R.string.app_name), ContextCompat.getColor(applicationContext, R.color.accent_word) )
     }
 
     fun setAnimation() {
