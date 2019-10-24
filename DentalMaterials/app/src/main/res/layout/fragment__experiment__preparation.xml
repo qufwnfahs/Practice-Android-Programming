@@ -1,83 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              tools:context=".Fragment.Fragment_Experiment_Preparation" android:background="@color/colorMain">
-    <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:clickable="true"
-            android:background="@drawable/button_unselected_state">
-        <TextView
-                android:text="Experiment Preparation"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" android:id="@+id/textView_e_p_title"
-                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-                app:layout_constraintTop_toTopOf="parent" android:textColor="#000000" android:gravity="center"
-                android:layout_marginTop="20dp" android:textSize="24sp"/>
-        <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView_e_p_title"
-                app:layout_constraintBottom_toTopOf="@+id/guideline_1"
-                android:layout_marginTop="20dp" android:id="@+id/recyclerView_needs"
-                android:layout_gravity="center"
-                android:overScrollMode="never"/>
-        <androidx.constraintlayout.widget.Guideline
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/guideline_1" app:layout_constraintGuide_percent="0.7"/>
-        <androidx.constraintlayout.widget.Guideline
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/guideline_2"
-                app:layout_constraintGuide_percent="0.85"/>
-        <androidx.constraintlayout.widget.Guideline
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/guideline_3"
-                app:layout_constraintGuide_percent="1"/>
-        <TextView
-                android:text="Working Time"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView_working_time" app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toTopOf="@+id/guideline_1" android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline_2"
-                app:layout_constraintEnd_toStartOf="@+id/button_working_time"
-                android:layout_marginEnd="8dp" android:textColor="#000000" android:gravity="center"
-                android:textSize="24sp"/>
-        <Button
-                android:text="Start"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:id="@+id/button_working_time" app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="8dp"
-                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline_1"
-                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline_2"
-                android:background="@drawable/selector_working_time" android:textSize="24sp"/>
-        <TextView
-                android:text="Setting Time"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView_setting_time" app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="@+id/guideline_2"
-                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline_3"
-                android:textColor="#000000" android:gravity="center" android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/button_setting_time" android:textSize="24sp"/>
-        <Button
-                android:text="Start"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:id="@+id/button_setting_time" app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="8dp"
-                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline_2"
-                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline_3"
-                android:background="@drawable/selector_setting_time" android:textSize="24sp"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    tools:context=".Fragment.Fragment_Experiment_Preparation">
+
+    <TextView
+        android:id="@+id/textView__title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/iropkebatang"
+        android:gravity="center"
+        android:text="Experiment Preparation"
+        android:textColor="#000000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_exp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <TextView
+        android:id="@+id/textView_needs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/iropkebatang"
+        android:gravity="center"
+        android:textColor="#000000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

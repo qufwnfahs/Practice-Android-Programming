@@ -12,18 +12,25 @@
         <TextView
                 android:id="@+id/textView_title"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent" android:textSize="18sp" android:layout_marginTop="50dp"
-                android:textColor="@color/gray" android:text="Autonomous Contents"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/iropkebatang"
+                android:text="Autonomous Contents"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
                 android:id="@+id/textView_subTitle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="30sp"
+                android:layout_height="0dp"
                 android:background="@drawable/border"
-                tools:layout_editor_absoluteX="3dp"
+                android:fontFamily="@font/iropkebatang"
+                android:textColor="@color/tab_text_color"
+                android:textSize="26sp"
                 app:layout_constraintTop_toBottomOf="@+id/textView_title"
-                android:textColor="@color/tab_text_color"/>
+                tools:layout_editor_absoluteX="3dp" />
 
         <fragment
                 android:name="androidx.navigation.fragment.NavHostFragment"
@@ -34,12 +41,16 @@
                 android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginBottom="8dp"/>
+
         <ImageView
-                android:layout_width="180dp"
-                android:layout_height="50dp" app:srcCompat="@drawable/ic_logo"
-                android:id="@+id/imageView" android:layout_marginBottom="10dp"
-                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:scaleType="fitXY"/>
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_logo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

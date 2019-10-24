@@ -10,9 +10,11 @@
             android:id="@+id/textView_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/iropkebatang"
             android:gravity="center"
+            android:textColor="#5D5D5D"
             android:textSize="14dp"
             android:textStyle="bold"
-            tools:text="Sample Text" android:textColor="#5D5D5D"/>
+            tools:text="Sample Text" />
 
 </LinearLayout>

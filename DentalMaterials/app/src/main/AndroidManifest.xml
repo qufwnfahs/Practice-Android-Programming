@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dentalmaterials" >
+    package="com.shinco.dentalmaterials" >
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
-        <activity android:name=".Activity.SplashActivity"
+        <activity android:name="com.shinco.dentalmaterials.Activity.SplashActivity"
                   android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,13 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.MainActivity"
+        <activity android:name="com.shinco.dentalmaterials.Activity.MainActivity"
                   android:screenOrientation="portrait"></activity>
-        <activity android:name=".Activity.PracticePlayActivity"
+        <activity android:name="com.shinco.dentalmaterials.Activity.PracticePlayActivity"
                   android:screenOrientation="portrait"></activity>
-        <activity android:name=".Activity.AutonomousActivity"
+        <activity android:name="com.shinco.dentalmaterials.Activity.AutonomousActivity"
                   android:screenOrientation="portrait"></activity>
-        <activity android:name=".Activity.FullScreenActivity"
+        <activity android:name="com.shinco.dentalmaterials.Activity.LibraryInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.shinco.dentalmaterials.Activity.FullScreenActivity"
                   android:screenOrientation="landscape"></activity>
     </application>
 

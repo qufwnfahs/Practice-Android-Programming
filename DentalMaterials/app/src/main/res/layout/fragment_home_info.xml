@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorMain">
+
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -17,43 +18,32 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:background="@drawable/selector_info_close"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" android:scaleType="fitXY"/>
-        <TextView
-                android:id="@+id/textView_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp" android:hint="title" app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent" android:layout_margin="20dp" android:textColor="@color/tab_text_color"/>
-        <TextView
-                android:id="@+id/textView_character"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_below="@id/textView_title"
-                app:layout_constraintTop_toBottomOf="@+id/textView_title"
+                android:layout_height="match_parent"
                 android:layout_margin="20dp"
-                android:textColor="@color/tab_text_color"/>
-        <TextView
-                android:id="@+id/textView_time_job"
+                android:overScrollMode="never">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                app:layout_constraintTop_toBottomOf="@+id/textView_character" android:layout_margin="20dp"
-                android:textColor="@color/tab_text_color"/>
-        <TextView
-                android:id="@+id/textView_time_stick"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                app:layout_constraintTop_toBottomOf="@+id/textView_time_job" android:layout_margin="20dp"
-                android:textColor="@color/tab_text_color"/>
-        <TextView
-                android:id="@+id/textView_needs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp" app:layout_constraintTop_toBottomOf="@+id/textView_time_stick"
-                android:layout_margin="20dp"
-                android:textColor="@color/tab_text_color"/>
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:breakStrategy="simple"
+                    android:hint="title"
+                    android:singleLine="false"
+                    android:textColor="@color/tab_text_color"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+        </ScrollView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

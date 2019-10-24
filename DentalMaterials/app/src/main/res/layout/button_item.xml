@@ -5,11 +5,11 @@
               android:layout_height="wrap_content">
 
     <Button
-            android:text="Button"
+            android:id="@+id/button__composite_resin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button_play"
             android:background="@drawable/selector_button"
-            android:textColor="#5D5D5D"
-    />
+            android:fontFamily="@font/iropkebatang"
+            android:text="Button"
+            android:textColor="#5D5D5D" />
 </LinearLayout>

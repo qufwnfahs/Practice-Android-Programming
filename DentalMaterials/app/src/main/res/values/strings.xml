@@ -1,6 +1,105 @@
 <resources>
-    <string name="app_name">Dental Materials</string>
-    <string name="tab_home_title">Dental Materials\nInformation</string>
+    <string name="app_name">치과재료학실습</string>
+    <string name="app_title">Dental Materials</string>
+    <string name="tab_home_title">Practice\nInformation</string>
+    <string name="app_version">앱버전 1.4.0</string>
+
+    // Subject Home
+    <string name="subject__composite_resin">Composite Resin</string>
+    <string name="subject__alginate">Alginate</string>
+    <string name="subject__dental_gypsum">Dental Gypsum</string>
+    <string name="subject__rubber_impression_materials">Rubber Impression Materials</string>
+    <string name="subject__dental_wax">Dental Wax</string>
+    <string name="subject__dental_cement">Dental Cement</string>
+    <string name="subject__dental_cad_cam">Dental CAD, CAM</string>
+
+    // Subject Practice
+    <string name="subject__alginate_auto">Alginate (Auto)</string>
+    <string name="subject__dental_bleaching_tray">Dental Bleaching Tray</string>
+    <string name="subject__dental_cement_zoe_zpc">Dental Cement (ZOE, ZPC)</string>
+    <string name="subject__dental_cement_pcc_gic">Dental Cement (PCC, GIC)</string>
+
+    // Video URL ( Practice )
+    <string name="video__practice_composite_resin">practice__composite_resin</string>
+    <string name="video__practice_alginate">practice__alginate</string>
+    <string name="video__practice_alginate_auto">null</string>
+    <string name="video__practice_dental_gypsum">null</string>
+    <string name="video__practice_dental_bleaching_tray">null</string>
+    <string name="video__practice_rubber_impression_materials">practice__rubber_impression_materials</string>
+    <string name="video__practice_dental_wax">null</string>
+    <string name="video__practice_dental_cement_zoe_zpc">null</string>
+    <string name="video__practice_dental_cement_pcc_gic">null</string>
+    <string name="video__practice_dental_cad_cam">null</string>
+
+    // Open Source Library
+    <string name="library__title">Library Uses</string>
+    <string name="library__exoplayer">ExoPlayer</string>
+    <string name="library__exoplayer_contents">
+        The following software may be included in this product: ExoPlayer.
+        This software contains the following license and notice below:\n\n
+
+        Copyright 2016 Google LLC\n\n
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at\n\n
+
+        http://www.apache.org/licenses/LICENSE-2.0\n\n
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+    </string>
+    <string name="library__flexbox">flexbox-layout</string>
+    <string name="library__flexbox_contents">
+        The following software may be included in this product: flexbox-layout.
+        This software contains the following license and notice below:\n\n
+
+        Copyright 2018 Google LLC\n\n
+
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0\n\n
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+    </string>
+
+    // Needs
+    // Needs Strings
+    <string-array name="needs__composite_resin">
+        <item>timer__image__composite_resin</item>
+    </string-array>
+    <string-array name="needs__alginate">
+        <item>timer__image__alginate</item>
+    </string-array>
+    <string-array name="needs__alginate_auto"></string-array>
+    <string-array name="needs__dental_gypsum"></string-array>
+    <string-array name="needs__dental_bleaching_tray"></string-array>
+    <string-array name="needs__rubber_impression_materials"></string-array>
+    <string-array name="needs__dental_wax"></string-array>
+    <string-array name="needs__dental_cement_zoe_zpc"></string-array>
+    <string-array name="needs__dental_cement_pcc_gic"></string-array>
+    <string-array name="needs__dental_cad_cam"></string-array>
+
+    // Timer
+    <string-array name="timer__composite_resin">
+        <item>Etching,20sec,0,10</item>
+        <item>Photopolymerization 1,5sec,1,11</item>
+        <item>Photopolymerization 2,15sec,1,11</item>
+    </string-array>
+    <string-array name="timer__alginate">
+        <item>Working time,1.25min,0,11</item>
+        <item>Setting time,2min,1,10</item>
+    </string-array>
+
 
     // Tab Menu
     <string-array name="main_tabName">
@@ -11,142 +110,204 @@
 
     // fragment home buttons
     <string-array name="home_buttons">
+        <item>Composite Resin</item>
         <item>Alginate</item>
-        <item>Glass ionomer</item>
-        <item>Composite resin</item>
-        <item>Dental wax</item>
-        <item>Dental cement</item>
-        <item>Dental ceramic</item>
+        <item>Dental Gypsum</item>
+        <item>RubberImpression Materials</item>
+        <item>Dental Wax</item>
+        <item>Dental Cement</item>
+        <item>Dental CAD, CAM</item>
+    </string-array>
+
+    // fragment practice buttons
+    <string-array name="practice_buttons">
+        <item>Composite Resin</item>
+        <item>Alginate</item>
+        <item>Alginate (Auto) </item>
+        <item>Dental Gypsum</item>
+        <item>Dental Bleaching Tray</item>
+        <item>Rubber Impression Materials</item>
+        <item>Dental Wax</item>
+        <item>Dental Cement(ZOE, ZPC)</item>
+        <item>Dental Cement(PCC, GIC)</item>
+        <item>Dental CAD, CAM</item>
     </string-array>
 
     // Info Strings
+    <string-array name="CompositeResin">
+        <item>1 2 8 10</item>
+        <item>Composite Resin (복합 레진)\n\n</item>
+        <item>적응중\n</item>
+        <item>
+            1급와동(구치 교합면, 구치 협면이나 설면의 교합 2/3, 상악절치 설면)\n
+        </item>
+        <item>
+            2급와동(구치 인접면 포함)\n
+        </item>
+        <item>
+            3급와동(절단면을 포함하지 않은 절치)\n
+        </item>
+        <item>
+            4급와동(인접면과 절단을 포함한 절치)\n
+        </item>
+        <item>
+            5급와동(치경 1/3)\n\n
+        </item>
+        <item>준비물\n</item>
+        <item>
+            산부식액(에칭), 접착제(본딩), 복합레진, 레진 어플리케이터, 광중합기, 교합기\n\n
+        </item>
+        <item>실습과정\n</item>
+        <item>
+            에칭(15~30초) => 세척 => 건조 => 본딩 => 광중합(5~10초) => 레진충전 => 광중합(15~20초) => 교합체크 => 연마
+        </item>
+    </string-array>
+
     <string-array name="Alginate">
-        <item>Alginate(알지네이트)</item>
-        <item>알지네이트의 특성</item>
-        <item>작업시간:</item>
-        <item>경화시간:</item>
-        <item>실습준비물:</item>
+        <item>1 3 5</item>
+        <item>Alginate (알지네이트)\n</item>
+        <item>치아와 구강조직 및 전체 악궁을 복제  하여 모형을 제작하기 위해 사용\n\n</item>
+        <item>준비물\n</item>
+        <item>알지네이트, 계량스푼, 혼수컵, 러버볼, 스파튤라, 상 하악 트레이\n\n</item>
+        <item>실습과정\n</item>
+        <item>트레이선택 -> 알지네이트 믹싱(30~45초) -> 구강 내 적용 -> 경화 -> 제거</item>
     </string-array>
 
-    <string-array name="Glassionomer">
-        <item>Glass ionomer</item>
-        <item>Glass ionomer의 특성</item>
-        <item>작업시간:</item>
-        <item>경화시간:</item>
-        <item>실습준비물:</item>
+    <string-array name="DentalGypsum">
+        <item>1 2 8 10</item>
+        <item>Dental Gypsum (치과용 석고)\n\n</item>
+        <item>석고 모형재 종류\n</item>
+        <item>제1형 : 인상채득용 / 흰색</item>
+        <item>제2형 : 연구용 / 흰색</item>
+        <item>제3형 : 작업용 / 노란색</item>
+        <item>제4형 : 다이용 / 분홍색</item>
+        <item>제5형 : 다이용 / 녹색\n\n</item>
+        <item>준비물\n</item>
+        <item>알지네이트 인상, 석고, 혼수컵, 스파튤라 러버볼, 진동기\n\n</item>
+        <item>실습과정\n</item>
+        <item>석고와 물 혼합 -> 진동기에서 기포 제거 -> 치형 부분 주입 -> 석고 추가하여 혼합 -> 치은협 이행부에서 1cm까지 주입 -> 경화 (30~40분) -> 제거</item>
     </string-array>
 
-    <string-array name="Compositeresin">
-        <item>Composite resin</item>
-        <item>Compositeresin의 특성</item>
-        <item>작업시간:</item>
-        <item>경화시간:</item>
-        <item>실습준비물:</item>
+    <string-array name="RubberImpressionMaterials">
     </string-array>
 
-    <string-array name="Dentalwax">
-        <item>Dental wax</item>
-        <item>Dental wax의 특성</item>
-        <item>작업시간:</item>
-        <item>경화시간:</item>
-        <item>실습준비물:</item>
+    <string-array name="DentalWax">
     </string-array>
 
-    <string-array name="Dentalcement">
-        <item>Dental cement</item>
-        <item>Dental cement의 특성</item>
-        <item>작업시간:</item>
-        <item>경화시간:</item>
-        <item>실습준비물:</item>
+    <string-array name="DentalCement">
     </string-array>
 
-    <string-array name="Dentalceramic">
-        <item>Dental ceramic</item>
-        <item>Dental ceramic의 특성</item>
-        <item>작업시간:</item>
-        <item>경화시간:</item>
-        <item>실습준비물:</item>
+    <string-array name="DentalCADCAM">
     </string-array>
 
-    // Needs Strings
-    <string-array name="NeedsAlginate">
-        <item>준비물 1</item>
-        <item>준비물 2</item>
-        <item>준비물 3</item>
-        <item>준비물 4</item>
-        <item>준비물 5</item>
+    // NeedsKR Strings
+    <string-array name="NeedsKRCompositeResin">
+        <item>에칭</item>
+        <item>본딩</item>
+        <item>복합레진</item>
+        <item>광조사기</item>
+        <item>교합지</item>
+        <item>레진 어플리케이터</item>
+        <item>브러시</item>
+    </string-array>
+    <string-array name="NeedsKRAlginate">
+        <item>알지네이트</item>
+        <item>계량스푼</item>
+        <item>계량컵</item>
+        <item>러버볼</item>
+        <item>스파튤라</item>
+        <item>상 하악 트레이</item>
+    </string-array>
+    <string-array name="NeedsKRAlginateAuto">
+        <item>에칭</item>
+        <item>본딩</item>
+        <item>교합기</item>
+    </string-array>
+    <string-array name="NeedsKRDentalGypsum">
+        <item>에칭</item>
+        <item>본딩</item>
+        <item>교합기</item>
+    </string-array>
+    <string-array name="NeedsKRDentalBleachingTray">
+        <item>에칭</item>
+        <item>본딩</item>
+        <item>교합기</item>
+    </string-array>
+    <string-array name="NeedsKRElasticImpressionMaterials">
+        <item>에칭</item>
+        <item>본딩</item>
+        <item>교합기</item>
+    </string-array>
+    <string-array name="NeedsKRDentalWax">
+        <item>에칭</item>
+        <item>본딩</item>
+        <item>교합기</item>
+    </string-array>
+    <string-array name="NeedsKRDentalCementZOEZPC">
+        <item>에칭</item>
+        <item>본딩</item>
+        <item>교합기</item>
+    </string-array>
+    <string-array name="NeedsKRDentalCementPCCGIC">
+        <item>에칭</item>
+        <item>본딩</item>
+        <item>교합기</item>
+    </string-array>
+    <string-array name="NeedsKRDentalCADCAM">
+        <item>에칭</item>
+        <item>본딩</item>
+        <item>교합기</item>
     </string-array>
 
-    <string-array name="NeedsGlassionomer">
-        <item>준비물 1</item>
-        <item>준비물 2</item>
-        <item>준비물 3</item>
-    </string-array>
-    <string-array name="NeedsCompositeresin">
-        <item>준비물 1</item>
-        <item>준비물 2</item>
-    </string-array>
-    <string-array name="NeedsDentalwax">
-        <item>준비물 1</item>
-        <item>준비물 2</item>
-        <item>준비물 3</item>
-        <item>준비물 4</item>
-        <item>준비물 5</item>
-        <item>준비물 6</item>
-        <item>준비물 7</item>
-        <item>준비물 8</item>
-        <item>준비물 9</item>
-    </string-array>
-    <string-array name="NeedsDentalcement">
-        <item>준비물 1</item>
-    </string-array>
-    <string-array name="NeedsDentalceramic">
-        <item>준비물 1</item>
-        <item>준비물 2</item>
-        <item>준비물 3</item>
-        <item>준비물 4</item>
-    </string-array>
-
-    // WorkingTime Strings
-    <string-array name="WorkingTimeAlginate">
-        <item>1.25min</item>
-    </string-array>
-    <string-array name="WorkingTimeGlassionomer">
-        <item>5min</item>
-    </string-array>
-    <string-array name="WorkingTimeCompositeresin">
-        <item>0.5min</item>
-    </string-array>
-    <string-array name="WorkingTimeDentalwax">
-        <item>3min</item>
-    </string-array>
-    <string-array name="WorkingTimeDentalcement">
-        <item>3.25min</item>
-    </string-array>
-    <string-array name="WorkingTimeDentalceramic">
-        <item>6.25min</item>
-    </string-array>
-
-    // SettingTime Strings
-    <string-array name="SettingTimeAlginate">
-        <item>30sec</item>
-    </string-array>
-    <string-array name="SettingTimeGlassionomer">
-        <item>50sec</item>
-    </string-array>
-    <string-array name="SettingTimeCompositeresin">
-        <item>2min</item>
-    </string-array>
-    <string-array name="SettingTimeDentalwax">
+    // Time Strings
+    <string-array name="TimeCompositeResin">
+        <item>20sec</item>
+        <item>5sec</item>
         <item>15sec</item>
     </string-array>
-    <string-array name="SettingTimeDentalcement">
-        <item>45sec</item>
+    <string-array name="TimeAlginate">
+        <item>30sec</item>
+        <item>10sec</item>
+        <item>15sec</item>
     </string-array>
-    <string-array name="SettingTimeDentalceramic">
-        <item>55sec</item>
+    <string-array name="TimeAlginateAuto">
+        <item>30sec</item>
+        <item>10sec</item>
+        <item>15sec</item>
     </string-array>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="TimeDentalGypsum">
+        <item>30sec</item>
+        <item>10sec</item>
+        <item>15sec</item>
+    </string-array>
+    <string-array name="TimeDentalBleachingTray">
+        <item>30sec</item>
+        <item>10sec</item>
+        <item>15sec</item>
+    </string-array>
+    <string-array name="TimeElasticImpressionMaterials">
+        <item>30sec</item>
+        <item>10sec</item>
+        <item>15sec</item>
+    </string-array>
+    <string-array name="TimeDentalWax">
+        <item>30sec</item>
+        <item>10sec</item>
+        <item>15sec</item>
+    </string-array>
+    <string-array name="TimeDentalCementZOEZPC">
+        <item>30sec</item>
+        <item>10sec</item>
+        <item>15sec</item>
+    </string-array>
+    <string-array name="TimeDentalCementPCCGIC">
+        <item>30sec</item>
+        <item>10sec</item>
+        <item>15sec</item>
+    </string-array>
+    <string-array name="TimeDentalCADCAM">
+        <item>30sec</item>
+        <item>10sec</item>
+        <item>15sec</item>
+    </string-array>
 </resources>

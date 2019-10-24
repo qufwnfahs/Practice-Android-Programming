@@ -6,20 +6,24 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/constraintLayout">
+            android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/layout__composite_resin">
 
         <TextView
-                android:text="Alginate"
+                android:id="@+id/tv__composite_resin"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/textView_item" android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/iropkebatang"
+                android:gravity="center"
+                android:text="Alginate"
                 android:textColor="@color/tab_text_color"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" android:gravity="center"
-                android:textSize="24sp"/>
+                app:layout_constraintTop_toTopOf="parent" />
         <ImageButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button_play" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/button__composite_resin" android:layout_weight="1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" android:gravity="center"
                 android:background="@drawable/selector_button"
